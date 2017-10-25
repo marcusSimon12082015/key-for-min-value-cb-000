@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     return nil
   end
   key_min = ""
-  min = 10000
+  min = Float::INFINITY
   name_hash.collect do |key,value|
     if value < min
       key_min = key
